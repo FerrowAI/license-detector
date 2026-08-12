@@ -57,4 +57,4 @@ Flattens all license ids referenced in a parsed SPDX expression.
 - Confidence is a fraction of matched distinctive phrases, not a probability or legal certainty.
 
 ---
-Part of the [ferrow-toolkit](https://github.com/Ruzylo-cloud/ferrow-toolkit) collection · Sponsored by [Ferrow](https://ferrow.ai)
+Part of the [ferrow-toolkit](https://github.com/FerrowAI/ferrow-toolkit) collection · Sponsored by [Ferrow](https://ferrow.ai)
