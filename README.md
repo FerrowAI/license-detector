@@ -1,4 +1,5 @@
 # license-detector
+![CI](https://github.com/FerrowAI/license-detector/actions/workflows/ci.yml/badge.svg)
 
 Detect open-source licenses from raw file text via normalized fingerprint matching against a
 built-in corpus of 12 common licenses. Strict TypeScript, zero runtime dependencies.
