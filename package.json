@@ -1,0 +1,28 @@
+{
+  "name": "license-detector",
+  "version": "1.0.0",
+  "description": "Detect open-source licenses from raw file text using normalized fingerprint matching against a built-in corpus of 12 common licenses. Zero runtime dependencies.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "keywords": [
+    "license",
+    "spdx",
+    "license-detection",
+    "open-source",
+    "compliance",
+    "mit",
+    "apache"
+  ],
+  "author": "Ruzylo-cloud",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}

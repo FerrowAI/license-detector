@@ -1,0 +1,29 @@
+# license-detector
+
+> Detect open-source licenses from raw file text using normalized fingerprint matching against a built-in corpus of 12 common licenses.
+
+This library reads plain license text (a LICENSE file's contents, a header comment, whatever you
+hand it) and scores it against distinctive-phrase fingerprints for 12 common SPDX licenses (MIT,
+Apache-2.0, BSD-2/3-Clause, ISC, GPL-2/3, LGPL-3.0, MPL-2.0, Unlicense, CC0-1.0, WTFPL). Matching is
+normalized (lowercased, copyright lines stripped, whitespace collapsed) and phrase-based, so it
+survives changed copyright holders/years but is sensitive to reworded license text. It also includes
+a small SPDX expression parser for AND/OR/WITH syntax. This is a text heuristic, not legal advice —
+always confirm licensing decisions with a human or counsel.
+
+## API
+
+- `detectLicense(text: string, options?: DetectOptions): DetectionResult[]`
+- `detectLicenseBatch(files: BatchInput[], options?: DetectOptions): BatchResult[]`
+- `normalize(text: string): string`
+- `listKnownLicenses(): string[]`
+- `parseSpdxExpression(expression: string): SpdxNode`
+- `collectLicenseIds(node: SpdxNode): string[]`
+- Types: `DetectionResult`, `DetectOptions`, `BatchInput`, `BatchResult`, `SpdxNode`
+
+## Install
+
+```
+npm install license-detector
+```
+
+Part of the Ferrow open-source toolkit: https://github.com/Ruzylo-cloud/ferrow-toolkit — sponsored by https://ferrow.ai
