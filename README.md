@@ -1,4 +1,8 @@
 # license-detector
+
+```sh
+npm install @ferrow/license-detector
+```
 ![CI](https://github.com/FerrowAI/license-detector/actions/workflows/ci.yml/badge.svg)
 
 Detect open-source licenses from raw file text via normalized fingerprint matching against a

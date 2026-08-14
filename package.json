@@ -1,5 +1,5 @@
 {
-  "name": "license-detector",
+  "name": "@ferrow/license-detector",
   "version": "1.0.0",
   "description": "Detect open-source licenses from raw file text using normalized fingerprint matching against a built-in corpus of 12 common licenses. Zero runtime dependencies.",
   "main": "dist/index.js",
